@@ -4,6 +4,29 @@ A fine-tuned text classifier that evaluates discourse quality in r/movies Reddit
 
 ---
 
+## Repository Structure
+
+```
+AI201-Project-3---TakeMeTer/
+├── planning.md                  # Design thinking: labels, edge cases, data plan, AI tool plan
+├── README.md                    # This file — final report and evaluation
+│
+├── dataset.csv                  # Final labeled dataset (209 examples, used for training)
+├── raw_posts.csv                # Raw posts as collected from HuggingFace (no labels)
+├── prelabeled_posts.csv         # Ollama pre-labeled draft (AI annotation disclosure)
+│
+├── collect_data.py              # Collects r/movies posts from HuggingFace dataset
+├── prelabel.py                  # Pre-labels posts using local Ollama (llama3.1)
+├── fix_labels.py                # Second-pass label correction (reaction vs hot_take)
+├── train_and_eval.py            # Fine-tuning + evaluation pipeline (local version)
+│
+├── confusion_matrix.png         # Confusion matrix from fine-tuned model evaluation
+├── evaluation_results.json      # Numeric results: accuracy, F1, model info
+└── takemeter.ipynb              # Colab-compatible notebook version
+```
+
+---
+
 ## Community and Task
 
 **Subreddit:** r/movies — one of Reddit's largest film communities, ranging from casual viewers to dedicated cinephiles.
