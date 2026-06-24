@@ -161,4 +161,4 @@ After training, I will collect all wrong predictions from the test set and pass 
 
 ---
 
-*Last updated: Milestone 3. To be updated before any stretch features are added.*
+*Last updated: Milestone 6 (final). Spec reflection and AI usage in README.md.*
